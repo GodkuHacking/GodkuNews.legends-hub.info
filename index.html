@@ -7,7 +7,7 @@
     <title>Dragon Ball Legends News</title>
     <meta property="og:title" content="Dragon Ball Legends News by GodkuDBL">
     <meta property="og:description" content="Get the latest news and updates about Dragon Ball Legends from godku (may be updated later then release on twitter.)">
-    <meta property="og:image" content="https://dblegends.net/assets/card_icons/BChaIco_0603_FriezaGold_603.webp">
+    <meta property="og:image" content="https://dblegends.net/assets/card_icons/BChaIco_0605_Goku_605.webp">
 
     <style>
         body {
@@ -16,7 +16,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-        }
+        } 
 
         .container {
             width: 80%;
@@ -24,14 +24,30 @@
             padding-top: 50px;
         }
 
-        .news-item {
-            background-color: #333333;
-            border-radius: 10px;
-            overflow: hidden;
-            margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-        }
+.news-item {
+    background-color: transparent; /* Make background transparent */
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    position: relative; /* Set position to relative */
+}
+
+.news-item:before {
+    content: ""; /* Create pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://dblegends.net/assets/Inf_Footer.png');
+    background-size: cover;
+    border-radius: inherit;
+    z-index: -1; /* Ensure it's behind content */
+    opacity: 0.2; /* Adjust opacity as needed */
+}
+
 
         .news-item:hover {
             transform: translateY(-5px);
@@ -43,9 +59,11 @@
             transition: all 0.3s ease;
         }
 
-        .news-details {
-            padding: 20px;
-        }
+.news-details {
+    padding: 20px;
+    position: relative; /* Ensure z-index works */
+    z-index: 1; /* Ensure it's above the background */
+}
 
         .news-details h2 {
             font-size: 24px;
@@ -88,37 +106,57 @@
 </head>
 
 <body>
-    <div class="container">
         <h1 class="glow">Dragon Ball Legends News</h1>
+        <div class="container">
         <div class="news-item">
-            <img src="https://nah3ohdioj7ye3sh.dblgnds.channel.or.jp/information/en/img/banner/video_220315.jpg" alt="Reveals & Stuff #36" class="news-image">
+            <img src="https://dblegends.net/assets/gasha/gasha_2025800.webp" alt="UUI SUMMON!" class="news-image">
             <div class="news-details">
-                <h2>Reveals & Stuff #36 Is Coming Soon!</h2>
-                <p>Type: Event | Start Time: 2024-04-13 15:00:00 (JST) ～ End Time: 2024-04-17 15:00:00 (JST)</p>
-                <a href="news/engl/3827" class="read-more">Read more</a>
+                <h2>"ULTRA RISING - OMEN OF MASTERY -" Returns!</h2>
+                <p>Type: Summon |  Returning banner!</p>
+                <a href="news/engl/1298" class="read-more">Read more</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="news-item">
+            <img src="https://dblegends.net/assets/card_cutins/BChaCut_0606_Yamucha_606.webp" alt="New yamcha?!" class="news-image">
+            <div class="news-details">
+                <h2>DBL70-02S - Yamcha</h2>
+                <p>Type: Character | New unit!</p>
+                <a href="news/engl/1299" class="read-more">Read more</a>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="news-item">
-            <img src="https://nah3ohdioj7ye3sh.dblgnds.channel.or.jp/information/en/img/banner/pvp_ranking_info.jpg" alt="Splendid Springtime Duel #2 Top 20 Characters Announced!" class="news-image">
+            <img src="https://dblegends.net/assets/card_cutins/BChaCut_0605_Goku_605.webp" alt="Goku New!" class="news-image">
             <div class="news-details">
-                <h2>"Splendid Springtime Duel #2" Top 20 Characters Announced!</h2>
-                <p>Type: Event | Start Time: 2024-04-11 14:30:00 (JST) ～ End Time: 2030-01-01 00:00:00 (JST)</p>
-                <a href="news/engl/1628" class="read-more">Read more</a>
+                <h2>DBL70-01S - Goku</h2>
+                <p>Type: Character | New unit!</p>
+                <a href="news/engl/1230" class="read-more">Read more</a>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="news-item">
-            <img src="https://media.discordapp.net/attachments/689549472271040568/1229835648920191076/IMG_2464.png?ex=663120b3&is=661eabb3&hm=e17f2ff93176b51742321cb1c482215b711f97b4d704f33450eb1f7867d9ce4a&=&format=webp&quality=lossless&width=798&height=449" alt="Splendid Springtime Duel #2 Top 20 Characters Announced!" class="news-image">
+            <img src="https://dblegends.net/assets/gasha/gasha_23200.webp" alt="Banner New!" class="news-image">
             <div class="news-details">
-                <h2>New Sparking Goku Sayian Saga (Z)!</h2>
-                <p>Type: Character | More info soon.</p>
-                <a href="news/engl/1629" class="read-more">Read more</a>
+                <h2>DBL70-01S - Goku</h2>
+                <p>Type: Summon | New units!</p>
+                <a href="news/engl/1231" class="read-more">Read more</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="news-item">
+            <img src="https://dblegends.net/assets/events/story_event_60099.webp" alt="Banner New!" class="news-image">
+            <div class="news-details">
+                <h2>ZENKAI Rush Battle - Goku -</h2>
+                <p>Type: Event | New Zenkai</p>
+                <a href="news/engl/1232" class="read-more">Read more</a>
             </div>
         </div>
     </div>
 </body>
-
 </html>
